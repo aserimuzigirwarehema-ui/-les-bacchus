@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { UserPlus, Mail, ShieldCheck, Shield, ToggleLeft, ToggleRight, Trash2 } from 'lucide-react';
+import { UserPlus, Mail, ShieldCheck, Shield, ToggleLeft, ToggleRight, Trash2, Settings2 } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { useAuth } from '@/context/AuthContext';
 import { useToast } from '@/context/ToastContext';
@@ -126,8 +126,8 @@ export function EmployeesPage() {
                         <button onClick={() => toggleActive(emp)} disabled={emp.id === profile?.id || saving} className="btn-ghost p-1.5 rounded-lg" title={emp.is_active ? 'Désactiver' : 'Activer'}>
                           {emp.is_active ? <ToggleRight className="w-5 h-5 text-emerald-500" /> : <ToggleLeft className="w-5 h-5 text-muted" />}
                         </button>
-                        <button onClick={() => setEditTarget(emp)} disabled={emp.id === profile?.id} className="btn-ghost p-1.5 rounded-lg text-primary" title="Modifier">
-                          <UserPlus className="w-4 h-4" />
+                        <button onClick={() => setEditTarget(emp)} disabled={emp.id === profile?.id} className="btn-ghost p-1.5 rounded-lg text-primary" title="Paramètres d’accès">
+                          <Settings2 className="w-4 h-4" />
                         </button>
                       </div>
                     </td>
