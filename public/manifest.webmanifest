@@ -1,0 +1,35 @@
+{
+  "id": "/",
+  "name": "Les Bacchus — Gestion de buvette",
+  "short_name": "Les Bacchus",
+  "description": "Gestion des ventes, du stock et du personnel de la buvette.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "portrait-primary",
+  "theme_color": "#1a120d",
+  "background_color": "#f6f0ea",
+  "icons": [
+    {
+      "src": "/logo_App.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "prefer_related_applications": false
+}
